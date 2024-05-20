@@ -465,7 +465,8 @@ impl<'a> Transpiler<'a> {
             {
                 let key = header.key.as_ref().unwrap().to_lowercase();
                 let value = header.value.as_ref().unwrap();
-                if key == "accept" || key == "authorization" {
+                // if key == "accept" || key == "authorization" {
+                if key == "accept" {
                     continue;
                 }
                 if key == "content-type" {
